@@ -1,0 +1,694 @@
+
+// -------------------------------------------
+// Forked Template
+// -------------------------------------------
+
+// 1. #FORK STYLES
+//      1.1. Homepage Signup Form
+//      1.2. Image Widgets on Homepage
+//      1.3. Blog Posts List
+//      1.4. Twitter
+//      1.5. Ecom
+//      1.6. Profile Widgets on Footer
+// 2. #FLEXBOX MIXINS
+
+
+
+
+// -------------------------------------------
+// 1. #FORK STYLES
+// -------------------------------------------
+
+// Nav
+
+button.navigation-toggle {
+    background-color: transparent;
+}
+
+// Feature
+
+@media only screen and (min-width: 768px) {
+    .feature__background-image {
+        height: 650px;
+        min-height: 650px;
+    }
+    .feature__content-wrap {
+        padding-bottom: 105px;
+    }
+}
+
+// Donate Page
+
+.donate-content {
+    margin: 30px 0 40px;
+}
+
+.template-content {
+    margin: 50px auto;
+}
+
+.bk-pt-default .container {
+    padding-top: 0;
+}
+
+.page-title {
+    margin-bottom: 20px;
+}
+
+input.input[type=email], 
+input.input[type=search], 
+.contact-form__textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+
+// Homepage Signup Form in Header & Profile Signup Form in Footer
+// --------------------------------------------------------------
+
+// Homepage Signup form on Header
+.homepage-feature {
+    position: relative;
+    .homepage-signup {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -moz-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        .contain {
+            display: -webkit-flexbox;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2%;
+            width: 100%;
+        }
+
+        .leftdiv {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            label {
+                font-weight: 400!important;
+            }
+        }
+    
+        .rightdiv {
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            text-align: right;
+            @media @tablet {
+                display: none;
+            }
+        }
+        .form-body {
+            width: 100%;
+            margin: 30px auto;
+            max-width: 1300px;
+        }
+        .content p:last-child {
+            color: white;
+        }
+        // Transparent background on Desktop
+        @media only screen and (min-width: 768px) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        @media @tablet {
+            background-color: #2d2b2c;
+        }
+    }
+}
+
+// Profile Form in Footer
+.template-footer .signupform .form {
+    background-color: transparent;
+    .form-body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.template-footer .profile__signupform {
+    @media @tablet {
+        margin: 0 auto;
+    }
+    @media @mobile {
+        min-width: inherit;
+        max-width: inherit;
+    }
+}
+
+// Style for Signup Form in Header and Footer
+.homepage-signup .signupform .form,
+.template-footer .signupform .form {
+    border: none;
+    .label {
+        color: @color__body--background;
+        font-family: @font__h3--font-family;
+        font-size: @font__h3--font-size;
+        font-weight: @font__h3--font-weight;
+        line-height: @font__h3--line-height;
+        letter-spacing: @font__h3--letter-spacing;
+        margin: 0;
+        padding: 0;
+        // Remove label underline
+        &:after {
+            display: none;
+        }
+    }
+    .input {
+        height: 45px;
+        background-color: @color__body--background;
+        border: none;
+    }
+    .button {
+        @media @tablet {
+            background-color: lighten(@color__button--background, 20%);
+            &:hover {
+                background-color: @color__button--background--hover;
+            }
+        }
+    }
+}
+
+// Add flexbox to signup form in Header and Footer
+.homepage-signup .signupform__form-body,
+.template-footer .signupform__form-body {
+
+    .flex(@display: flex);
+    .flex-wrap(@wrap: nowrap);
+    .justify-content(@justify: flex-start);
+    .align-items(@align: flex-end);
+    .align-content(@align: flex-end);
+
+    @media @mobile {
+        .flex-wrap(@wrap: wrap);
+        .form-group:last-child {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .form-group:first-child {
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        @media @mobile {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100% !important;
+        }
+    }
+    .form-group:last-child {
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+}
+
+// Nested flexbox in signup form for label and input
+.homepage-signup .signupform .form-group:first-child,
+.template-footer .signupform .form-group:first-child {
+    .flex(@display: flex);
+    .flex-wrap(@wrap: wrap);
+    .justify-content(@justify: flex-end);
+    .align-items(@align: flex-end);
+    .align-content(@align: stretch);
+
+    .label {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin-bottom: 7px;
+        margin-right: 10px;
+    }
+    .input {
+        -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+        flex: 1 1 30%;
+        min-width: 300px;
+        margin-bottom: 0;
+        @media @mobile {
+            min-width: inherit;
+            margin-left: 0;
+            text-align: center;
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+        }
+    }
+}
+
+.template-footer .signupform .form-group:first-child {
+    @media @tablet {
+        .label {
+            text-align: left;
+        }
+        .input {
+            text-align: left;
+        }
+    }
+    @media @mobile {
+        .label {
+            text-align: center;
+        }
+        .input {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}
+
+
+// Homepage Image Widgets
+// -------------------------------------------
+
+.homepage-logo-content {
+
+    .flex(@display: flex);
+    .flex-wrap(@wrap: wrap);
+    .justify-content(@justify: space-between);
+    .align-items(@align: stretch);
+    .align-content(@align: space-between);
+
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .widget {
+        -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+        flex: 1 1 25%;
+        .imagewidget__figure {
+            margin: 20px 5px 0;
+            @media @mobile {
+                margin: 20px 0 0;
+            }
+        }
+        @media @mobile {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+        }
+    }
+}
+
+.homepage-logo-content {
+    padding: 4% 2% 4%;
+    .imagewidget__caption {
+        margin-top: 20px;
+    }
+}
+
+// Blog Posts List Style
+// -------------------------------------------
+
+.blogpostlist {
+    margin-bottom: 20px;
+
+    // Blog Article
+    .post-article {
+        .flex(@display: flex);
+        .flex-wrap(@wrap: wrap);
+        .justify-content(@justify: center);
+        .align-items(@align: center);
+        .align-content(@align: center);
+        background-color: @color-swatch7;
+        margin-bottom: 0;
+        padding: 0;
+
+        &:nth-of-type(even) {
+            .post-image {
+                .flex-order(@order: 1);
+            }
+            .post-content {
+                .flex-order(@order: 0);
+            }
+            .post-footer {
+                text-align: left;
+            }
+        }
+
+    }
+    // Blog Image
+    .post-image,
+    .post-content {
+        -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+        .flex-order(@order: 0);
+
+        // Image Link
+        .image-link {
+            background-position: 0;
+            position: relative;
+            display: inline-block;
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+            background-position: 50%;
+            margin: 0;
+        }
+        .image {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    // Blog Post Content
+    .post-content {
+        .flex-order(@order: 1);
+
+        padding: 40px 40px;
+    }
+
+    // Read Button
+    .read-more {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 15px;
+        background-color: @color__button--background;
+        color: @color__button--text;
+        border: 1px solid @color__button--border;
+        &:hover {
+            background-color: @color__button--background--hover;
+            text-decoration: none;
+        }
+    }
+
+    // Blog Post Footer
+    .post-footer {
+        -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        .flex-order(@order: 2);
+        text-align: right;
+        background-color: @color__body--background;
+
+        .timestamp {
+            display: block;
+            padding: 0;
+            margin: 0;
+            border: none;
+            color: @color__p--text;
+        }
+    }
+
+    // Tablet Breakpoint
+    @media only screen and (max-width: 800px) {
+
+        // Sets image and content above and below each other
+        .post-image,
+        .post-content {
+            -webkit-flex: 0 1 100%;
+                -ms-flex: 0 1 100%;
+                    flex: 0 1 100%;
+        }
+
+        // Blog Article
+        .post-article {
+        &:nth-of-type(even) {
+                .post-image {
+                    .flex-order(@order: 0);
+                }
+                .post-content {
+                    .flex-order(@order: 1);
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        // Post Image
+        .post-image .image-link {
+            height: 250px;
+        }
+
+        // Post Content
+        .post-content {
+            padding: 20px;
+        }
+        .read-more {
+            margin-top: 5px;
+        }
+
+        // Post Footer
+        .post-footer {
+            text-align: left;
+        }
+
+    }
+
+    // Post List Footer
+    .post-list-footer .pagination-list {
+        .flex(@display: flex);
+        .flex-wrap(@wrap: wrap);
+        .justify-content(@justify: space-between);
+    }
+}
+
+// Responsive Columns for Blogpostlist
+.responsivecolumns .blogpostlist .post-article {
+    display: block;
+    width: 100%;
+}
+.responsivecolumns .blogpostlist .post-footer {
+    padding: 20px 0px 1px;
+}
+
+// Blogpost list Overrides
+.blogpostlist .post-body.blogpost__post-body,
+.blogpostlist__post-header,
+.blogpostlist__post-excerpt {
+    max-width: inherit;
+    padding: 0;
+}
+.blogpostlist__title-link:after,
+.blogpost__post-title:after {
+    display: none;
+}
+.blogpostlist__title-link {
+    color: @font-swatch4-color;
+}
+.blogpostlist__post-header {
+    margin: 0 auto;
+}
+.blogpostlist__post-image,
+.blogpostlist__post-content {
+    text-align: inherit;
+}
+.blogpostlist__post-footer {
+    padding: 10px 5px 30px;
+}
+
+// Twitter
+// -------------------------------------------
+
+.widget__twitter {
+    border: none;
+    padding: 0;
+}
+.twitter__tweet-list {
+    .flex(@display: flex);
+    .flex-wrap(@wrap: wrap);
+    .justify-content(@justify: center);
+    .align-items(@align: stretch);
+    .align-content(@align: space-between);
+}
+
+.twitter__tweet-item,
+.twitter__tweet-item:last-child {
+    -webkit-flex: 1 1 32%;
+    -ms-flex: 1 1 32%;
+    flex: 1 1 32%;
+    border: 1px solid @color-swatch7;
+    padding: 30px;
+    margin: 5px;
+    @media @mobile {
+        -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+    }
+}
+
+.twitter__account-link {
+    color: @font-swatch4-color;
+}
+
+.responsivecolumns {
+    .twitter__tweet-list {
+        display: block;
+    }
+    .twitter__tweet-item,
+    .twitter__tweet-item:last-child {
+        -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+    }
+}
+
+// Profile Widgets on Footer
+// -------------------------------------------
+
+// Columns in Footer
+
+.template-footer {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: inherit;
+    .container {
+        .flex(@display: flex);
+        .flex-wrap(@wrap: wrap);
+        .justify-content(@justify: space-between);
+        .align-items(@align: flex-start);
+        .align-content(@align: flex-start);
+        @media @tablet {
+            .justify-content(@justify: center);
+        }
+    }
+    .col2 {
+        text-align: right;
+    }
+    .col1 {
+        -webkit-flex: 0 1 75%;
+        -ms-flex: 0 1 75%;
+        flex: 0 1 75%;
+        @media @tablet {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+    .col2 {
+        -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+        flex: 0 1 25%;
+        text-align: right;
+        @media @tablet {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+    .profile {
+        margin: 10px auto;
+    }
+    p,
+    a {
+        padding: 0;
+    }
+    // Address
+    p.address-line {
+        display: inline-block;
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    // Twitter
+    .twitter {
+        padding: 0;
+    }
+    .twitter__tweet-item {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .twitter__avatar {
+        display: block;
+    }
+    .socialicons__social-name {
+        display: none;
+    }
+    @media only screen and (min-width: 768px) {
+        .col1 {
+            .twitter__tweet-wrap {
+                text-align: left;
+            }
+            .twitter__avatar {
+                display: block;
+                float: left;
+            }
+        }
+        .col2 {
+            .twitter__tweet-wrap {
+                text-align: right;
+            }
+            .twitter__avatar {
+                display: block;
+                float: right;
+            }
+        }
+    }
+    @media @tablet {
+        .col1,
+        .col2 {
+            .twitter__tweet-wrap {
+                text-align: center;
+                max-width: inherit;
+            }
+            .twitter__avatar {
+                display: block;
+                float: inherit;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.template-footer__column2.col2 .tweet-item {
+    text-align: left;
+}
+

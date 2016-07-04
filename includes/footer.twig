@@ -1,0 +1,116 @@
+
+<!-- Footer 1 -->
+<div class="portfolio-divider">
+    <div class="portfolio-container">
+        <div class="lefttext">
+            {{widget('content', 'lefttextfooter', {
+                content: '<p>Read more of our latest news</p>'
+            })|raw}}
+        </div>
+        <div class="rightbutton">
+            {{widget('button', 'rightbuttonfooter', {
+                'text': 'Read More',
+                'align': 'widget-align-center',
+                'action': 'external',
+                'url': 'http://docs.basekit.com',
+                'target': '_blank'
+            })|raw}}
+        </div>
+    </div>
+</div>
+<!-- End Footer 1 -->
+
+<!-- Footer 2 -->
+<div class="bigfooter">
+    <div class="bigfooter-container">
+        <div class="footerlogo">
+            {{widget('logo', 'footerlogo', {
+                'defaultlogo': asset("images/logo-footer.png")
+            })|raw}}
+        </div>
+        <div class="londonaddress">
+            {{widget('content', 'london-title', {
+                content: '<p style="color: white">
+                LONDON</p>'
+            })|raw}}
+            {{widget('content', 'london-info', {
+                content: '<p>
+                29 Farm Street, 
+                London, W1J 5RL 
+                <br>UNITED KINGDOM
+                <br>
+                <br>
+                Tel: +44 (0) 203 553 5757 <br>
+                email: info@nautacapital.com</p>'
+            })|raw}}
+        </div>
+        <div class="bostonaddress">
+            {{widget('content', 'boston-title', {
+                content: '<p style="color: white">
+                BOSTON</p>'
+            })|raw}}
+            {{widget('content', 'boston-info', {
+                content: '<p>
+                200 High Street, 3rd floor
+                Boston, MA 02110
+                <br>USA
+                <br>
+                <br>
+                Tel: +1 617 986 5060 <br>
+                email: info@nautacapital.com</p>'
+            })|raw}}
+        </div>
+        <div class="barcelonaaddress">
+            {{widget('content', 'barcelona-title', {
+                content: '<p style="color: white">
+                BARCELONA</p>'
+            })|raw}}
+            {{widget('content', 'barcelona-info', {
+                content: '<p>
+                Avda. Diagonal 593, 8th floor
+                08014 Barcelona
+                <br>SPAIN
+                <br>
+                <br>
+                Tel: +34 93 503 5900 <br>
+                email: info@nautacapital.com</p>'
+            })|raw}}
+        </div>
+    </div>
+</div>
+<!-- End Footer 2 -->
+
+<!-- Footer 3 -->
+<footer class="template-footer">
+
+	<div class="container">
+        <div class="template-footer__column1 col1">
+        <div class="copyright">
+            {{widget('profile', 'copyright', {'profileType':'copyright', 'copyright':'profile'})|raw}}
+            </div>
+        <div class="terms">
+            {{widget('content', 'terms-conditions', {
+                content: '<p>
+                TERMS & CONDITIONS</p>'
+            })|raw}}
+
+            </div>
+        <div class="cookies">
+            {{widget('content', 'cookies-policy', {
+                content: '<p>
+                COOKIES POLICY</p>'
+            })|raw}}
+            </div>
+        </div>
+
+
+        <div class="template-footer__column2 col2">
+            {{widget('profile', 'socialicons', {
+                'profileType':'socialicons'
+            })|raw}}
+        </div>
+
+	</div>
+
+</footer>
+<!-- End Footer 3 -->

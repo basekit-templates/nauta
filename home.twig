@@ -1,0 +1,136 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<!-- Homepage Feature -->
+<div class="homepage-feature">
+	{{widget('feature', 'featurehome', {
+		'header': 'Capital-Efficient Foundation 
+for Global Disruptors',
+		'strapline': 'Nauta backs entrepreneurs that share our vision to create global disruptors, in large spaces, where technology has had limited impact.',
+		'defaultBgImg': asset("images/feature-bg.jpg"),
+		'positionTopPercentage': '0',
+		'showBtn': true,
+		buttonText: "View our portfolio"
+	})|raw}}
+	<div class="homepage-signup">
+		<div class="contain">
+			<div class="leftdiv">
+				{{widget('signupform', 'emailsignup', {
+				  'text': 'Submit',
+				  'label': 'Sign up to our newsletter:',
+				  'formTitle': 'Signup Form',
+				  'email': 'profile'
+				})|raw}}
+			</div>
+			<div class="rightdiv">
+				{{widget('content', 'sidebarcontent', {
+  					content: '<p style="font-style: italic">"£250 million under capital management"</p>'
+				})|raw}}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Homepage Feature -->
+
+<!-- Homepage Logo Content -->
+<div class="homepage-logo-content">
+	<div class="logo1">
+		{{widget('image', 'img1', {
+	  'src': asset("images/client1.jpg"),
+	  'align': 'widget-align-center'
+	})|raw}}
+		{{widget('image', 'logo1', {
+		  'src': asset("images/logo1.jpg"),
+		  'title': 'JUAN LOBATO',
+		  'description': 'www.basekit.com',
+		  'align': 'widget-align-center'
+		})|raw}}
+	</div>
+	<div class="logo2">
+		{{widget('image', 'img2', {
+	  'src': asset("images/client2.jpg"),
+	  'align': 'widget-align-center'
+	})|raw}}
+		{{widget('image', 'logo2', {
+		  'src': asset("images/logo2.jpg"),
+		  'title': 'GILES PALMER',
+		  'description': 'www.brandwatch.com',
+		  'align': 'widget-align-center'
+		})|raw}}
+	</div>
+	<div class="logo3">
+		{{widget('image', 'img3', {
+	  'src': asset("images/client3.jpg"),
+	  'align': 'widget-align-center'
+	})|raw}}
+		{{widget('image', 'logo3', {
+		  'src': asset("images/logo3.jpg"),
+		  'title': 'ALVARO DEL CASTILLO',
+		  'description': 'www.taptapnetworks',
+		  'align': 'widget-align-center'
+		})|raw}}
+	</div>
+	<div class="logo4">
+		{{widget('image', 'img4', {
+	  'src': asset("images/client4.jpg"),
+	  'align': 'widget-align-center'
+	})|raw}}
+		{{widget('image', 'logo4', {
+		  'src': asset("images/logo4.jpg"),
+		  'title': 'CRISTOPHE PRIMAULT',
+		  'description': 'www.bubera.com',
+		  'align': 'widget-align-center'
+		})|raw}}
+	</div>
+</div>
+<!-- End Homepage Logo Content -->
+
+
+
+<!-- Portfolio Divider -->
+<div class="portfolio-divider">
+	<div class="portfolio-container">
+		<div class="lefttext">
+			{{widget('content', 'sidebarcontent', {
+  				content: '<p>See our full client portfolio</p>'
+			})|raw}}
+		</div>
+		<div class="rightbutton">
+			{{widget('button', 'portfoliobutton', {
+  				'text': 'View portfolio',
+  				'align': 'widget-align-center',
+  				'action': 'external',
+  				'url': 'http://docs.basekit.com',
+  				'target': '_blank'
+			})|raw}}
+		</div>
+	</div>
+</div>
+<!-- End Portfolio Divider -->
+
+
+<!-- Container -->
+<div class="container">
+
+	<!-- Page Content -->
+	<section class="template-content">
+
+		<!-- Template Widgets -->
+
+		<!-- End Template Widgets -->
+
+		<!-- Main Widet Zone -->
+	   	{{zone('main')|raw}}
+
+	</section>
+	<!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

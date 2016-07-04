@@ -1,0 +1,32 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+<div class="bk-pt-donate">
+
+    <div class="page-title">
+        {{widget('pagetitle', 'title', {})|raw}}
+    </div>
+
+    <div class="container">
+        <section class="template-content">
+
+            <div class="donate-content">
+
+                {{widget('content', 'sidebarcontent', {
+                    content: '<p>Lorem ipsum dolor sit amet...</p>'
+                })|raw}}
+
+            </div>
+
+            {{zone('main')|raw}}
+
+        </section>
+    </div>
+
+</div>
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}
