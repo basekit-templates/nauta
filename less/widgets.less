@@ -256,9 +256,13 @@
     vertical-align: middle;
     display: table-cell;
     background-color: fade(@color__feature-content--background, 30%);
+    padding: 0;
 
     @media @tablet {
         max-width:100%;
+    }
+    @media @mobile {
+        padding: 0 2%;
     }
 }
 
@@ -270,6 +274,9 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 2%;
+    @media @mobile {
+        padding: 0;
+    }
 }
 
 
@@ -285,7 +292,7 @@
     }
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.7);
-        line-height: bkscale(@font-swatch8-line-height,0.8);
+        line-height: bkscale(@font-swatch8-line-height,0.7);
     }
 }
 

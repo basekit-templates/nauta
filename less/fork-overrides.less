@@ -152,6 +152,9 @@ input.input[type=search],
             width: 100%;
             margin: 30px auto;
             max-width: 1300px;
+            @media @mobile {
+                margin: 20px auto;
+            }
         }
         .content p:last-child {
             color: white;
@@ -272,6 +275,10 @@ input.input[type=search],
         flex: 1 1 auto;
         margin-bottom: 7px;
         margin-right: 10px;
+        text-align: left;
+        @media @mobile {
+            text-align: center;
+        }
     }
     .input {
         -webkit-flex: 1 1 30%;
