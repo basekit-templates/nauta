@@ -2,7 +2,7 @@
     "name":"Nauta",
     "thumbnail":"thumbnail.png",
     "screenshot":"screenshot.jpg",
-    "pageTypes":["home", "team"],
+    "pageTypes":["home", "team", "portfolio"],
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
