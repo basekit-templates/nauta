@@ -52,7 +52,7 @@ button.navigation-toggle {
 }
 
 .page-title {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     background-color: #f6f7fd;
 }
 
@@ -375,6 +375,9 @@ input.input[type=search],
         padding: 0;
         border-bottom: 1px solid @color-swatch7;
         padding-top: 50px;
+        @media @tablet {
+            padding-top: 0;
+        }
     }
     // Blog Image
     .post-image {
@@ -392,7 +395,7 @@ input.input[type=search],
         flex: 0 1 65%;
         .flex-order(@order: 1);
 
-        padding: 40px 40px;
+        padding: 0 40px;
     }
 
     // Read Button
@@ -436,11 +439,6 @@ input.input[type=search],
             -webkit-flex: 0 1 100%;
                 -ms-flex: 0 1 100%;
                     flex: 0 1 100%;
-        }
-
-        // Post Image
-        .post-image .image-link {
-            height: 250px;
         }
 
         // Post Content

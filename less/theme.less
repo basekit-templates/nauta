@@ -12,10 +12,9 @@
 // 1. #Header & Footer
 // -----------------------------
 
-.template-header,
-.template-footer {
+.template-header {
 	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
-	min-height: 80px;
+	min-height: 120px;
 	background-color: @color-swatch1;
 	// Tablet: reduce height
 }
@@ -29,6 +28,7 @@
 	background-color: @color__footer--background;
 	text-align: center;
 	color: @color__feature-strapline--text;
+    .flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
 
 	// Change heading elements to white
 	h1, h2, h3, h4 {
