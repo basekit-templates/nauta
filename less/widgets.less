@@ -494,6 +494,22 @@
     }
 }
 
+// Portfolio Page
+// --------------
+
+.portfolio-gallery {
+    .gallery__gallery-item {
+        width: 19%;
+    }
+    .gallery__image {
+        display: block;
+    }
+    .gallery__image-link {
+        background-image: none!important;
+        padding-bottom: 0!important;
+    }
+}
+
 // The following styles give you a three column gallery layout with a
 // coloured overlay
 
@@ -917,24 +933,15 @@ button, .button {
     margin: 20px 0 30px;
 }
 
-.contactform__fieldset {
-    margin: 0px auto;
-    display: table;
-    width: 70%;
-    text-align: center;
-}
-
 // Inputs
 input.input[type=email],
 input.input[type=search], 
 .contact-form__textarea {
-    border:0;
-    border-bottom:1px solid @color-swatch7;
     @media @mobile {
         margin-bottom: 10px;
     }
     &:focus {
-        border-color:@color-swatch4;
+        border: 2px solid #eeeeee;
     }
 }
 
@@ -960,12 +967,6 @@ input.input[type=search],
 
 .signupform__form-body {
     margin: 0px auto 10px;
-    display: table;
-    width: 70%;
-    text-align: center;
-    @media @mobile {
-        width: 80%;
-    }
 }
 
 .signupform__input {

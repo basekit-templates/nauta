@@ -1,0 +1,65 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+<div class="bk-pt-default">
+
+    <div class="page-title">
+        {{widget('pagetitle', 'title', {})|raw}}
+    </div>
+
+    <div class="container">
+        <section class="template-content">
+
+        <div class="gallery portfolio-gallery">
+
+        <!-- GALLERY WIDGET -->
+        {{widget('gallery', 'portfolio', {
+        'showTitle': false,
+        'showDescription': true,
+        'images':[
+            {'url':asset('/images/gallery/portfolio/aba.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/abi.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/agn.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/air.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/basekit.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/be.jpg'),' description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/brand.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/campus.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/chan.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/content.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/eyeview.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/fizz.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/force.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/fractus.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/gcm.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/geo.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/group.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/handmade.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/ijento.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/incrowd.jpg'),  'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/jitter.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/lodg.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/marf.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/mobile.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/mysport.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/nubera.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/priv.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/rif.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/scy.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/social.jpg'),'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/taptap.jpg'), 'description':'General Partners'},
+            {'url':asset('/images/gallery/portfolio/yui.jpg'), 'description':'General Partners'}
+        ]})|raw}}
+
+        </div>
+
+        </section>
+    </div>
+
+</div>
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}
