@@ -969,17 +969,40 @@ input.input[type=search],
 // 9.  #AdvancedForm
 // -----------------------------
 
+.advancedcontactform__form-body {
+    @media @tablet {
+        text-align:
+    }
+}
+
 .advancedcontactform__form-group:nth-child(odd) {
-    width: 49%;
+    width: 48%;
     display: inline-block;
-    margin-right: 2%;
+    margin-right: 4%;
+    @media @tablet {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .advancedcontactform__form-group:nth-child(even) {
-    width: 49%;
+    width: 48%;
     display: inline-block;
     float: right;
+    @media @tablet {
+        width: 100%;
+    }
 }
+
+.advancedcontactform__form-group:last-child {
+    margin-bottom: 0;
+    margin-top: 28px;
+    @media @tablet {
+        margin-top: 20px;
+    }
+}
+
+
 
 
 // -----------------------------
@@ -1094,6 +1117,7 @@ input.input[type=search],
     word-break: break-word;
     word-wrap: break-word;
 }
+
 
 
 
