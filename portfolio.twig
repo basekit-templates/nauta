@@ -12,46 +12,203 @@
     <div class="container">
         <section class="template-content">
 
-        <div class="gallery portfolio-gallery">
-
-        <!-- GALLERY WIDGET -->
-        {{widget('gallery', 'portfolio', {
-        'showTitle': false,
-        'showDescription': true,
-        'images':[
-            {'url':asset('/images/gallery/portfolio/aba.jpg'), 'description':'Online English Teaching Platform'},
-            {'url':asset('/images/gallery/portfolio/abi.jpg'), 'description':'Open-Source Cloud Computing Platform'},
-            {'url':asset('/images/gallery/portfolio/agn.jpg'), 'description':'Worldwide leading provider of voice biometric'},
-            {'url':asset('/images/gallery/portfolio/air.jpg'), 'description':'Solution that allows 3G traffic uploads through available WiFi'},
-            {'url':asset('/images/gallery/portfolio/basekit.jpg'), 'description':'Cloud Platform for web development'},
-            {'url':asset('/images/gallery/portfolio/be.jpg'),' description':'European leader in mobile crowdsourcing'},
-            {'url':asset('/images/gallery/portfolio/brand.jpg'), 'description':'A monitoring solution which helps companies about their brand'},
-            {'url':asset('/images/gallery/portfolio/campus.jpg'), 'description':'Wireless service provider targetting international students in the US'},
-            {'url':asset('/images/gallery/portfolio/chan.jpg'), 'description':'Channelsigh enables brands to grow ecommerce sales'},
-            {'url':asset('/images/gallery/portfolio/content.jpg'), 'description':'Content Raven’s global secure content engagement solution'},
-            {'url':asset('/images/gallery/portfolio/eyeview.jpg'), 'description':'Provides personalized video advertising technology across all screens. '},
-            {'url':asset('/images/gallery/portfolio/fizz.jpg'), 'description':'Fizzback helps brands to engage with their customers.'},
-            {'url':asset('/images/gallery/portfolio/force.jpg'), 'description':'A light and simple sales force management software'},
-            {'url':asset('/images/gallery/portfolio/fractus.jpg'), 'description':'Fractus designs, manufactures and licenses optimized antennas.'},
-            {'url':asset('/images/gallery/portfolio/gcm.jpg'), 'description':'GCM develops proprietary Digital Signal Processing (DSP) solutions.'},
-            {'url':asset('/images/gallery/portfolio/geo.jpg'), 'description':'Geoblink is a location intelligence SaaS.'},
-            {'url':asset('/images/gallery/portfolio/group.jpg'), 'description':'Groupalia connects local merchants through a daily e-mail.'},
-            {'url':asset('/images/gallery/portfolio/handmade.jpg'), 'description':'Provides celebrities and brands with their own social network'},
-            {'url':asset('/images/gallery/portfolio/ijento.jpg'), 'description':'iJento enriches your digital customer data.'},
-            {'url':asset('/images/gallery/portfolio/incrowd.jpg'),  'description':'Provides direct access to screened and targeted healthcare professionals.'},
-            {'url':asset('/images/gallery/portfolio/jitter.jpg'), 'description':'Jitterbug is a wireless service provider targeting the US and Canada.'},
-            {'url':asset('/images/gallery/portfolio/lodg.jpg'), 'description':'General Partners'},
-            {'url':asset('/images/gallery/portfolio/marf.jpg'), 'description':'Marfeel offers mobile reading technology'},
-            {'url':asset('/images/gallery/portfolio/mobile.jpg'), 'description':'Mobile Aware specializes in Internet content to mobile devices.'},
-            {'url':asset('/images/gallery/portfolio/mysport.jpg'), 'description':'Mysportgroup is a leading online retailer of sports goods based in Berlin.'},
-            {'url':asset('/images/gallery/portfolio/nubera.jpg'), 'description':'GetApp.com is a free online self-service marketplace to help businesses'},
-            {'url':asset('/images/gallery/portfolio/priv.jpg'), 'description':'Privalia is a leading European and Latin American online fashion retailer.'},
-            {'url':asset('/images/gallery/portfolio/rif.jpg'), 'description':'Rifiniti is a software company based in Boston, MA, and Sofia, Bulgaria. '},
-            {'url':asset('/images/gallery/portfolio/scy.jpg'), 'description':'Scytl is the worldwide leader of secure e-voting solutions for the public'},
-            {'url':asset('/images/gallery/portfolio/social.jpg'),'description':'Socialpoint is a leading developer of social games for Facebook and Mobile.'},
-            {'url':asset('/images/gallery/portfolio/taptap.jpg'), 'description':'TAPTAP Networks offers mobilization and monetization services'},
-            {'url':asset('/images/gallery/portfolio/yui.jpg'), 'description':'Yuilop is a provider of free voice and text communications.'}
-        ]})|raw}}
+        <div class="portfolio-images">
+        <!-- Homepage Logo Content -->
+            <div class="homepage-logo-content">
+                <div class="logo1 col4">
+                    {{widget('image', 'logo1', {
+                      'src': asset("/images/gallery/portfolio/aba.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo2 col4">
+                    {{widget('image', 'logo2', {
+                      'src': asset("/images/gallery/portfolio/abi.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo3 col4">
+                    {{widget('image', 'logo3', {
+                      'src': asset("/images/gallery/portfolio/agn.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo4 col4">
+                    {{widget('image', 'logo4', {
+                      'src': asset("/images/gallery/portfolio/air.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo5 col4">
+                    {{widget('image', 'logo5', {
+                      'src': asset("/images/gallery/portfolio/basekit.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo6 col4">
+                    {{widget('image', 'logo6', {
+                      'src': asset("/images/gallery/portfolio/be.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo7 col4">
+                    {{widget('image', 'logo7', {
+                      'src': asset("/images/gallery/portfolio/brand.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo8 col4">
+                    {{widget('image', 'logo8', {
+                      'src': asset("/images/gallery/portfolio/campus.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo9 col4">
+                    {{widget('image', 'logo9', {
+                      'src': asset("/images/gallery/portfolio/chan.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo10 col4">
+                    {{widget('image', 'logo10', {
+                      'src': asset("/images/gallery/portfolio/content.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo11 col4">
+                    {{widget('image', 'logo11', {
+                      'src': asset("/images/gallery/portfolio/eyeview.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo12 col4">
+                    {{widget('image', 'logo12', {
+                      'src': asset("/images/gallery/portfolio/fizz.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo13 col4">
+                    {{widget('image', 'logo13', {
+                      'src': asset("/images/gallery/portfolio/force.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo13 col4">
+                    {{widget('image', 'logo13', {
+                      'src': asset("/images/gallery/portfolio/fractus.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo14 col4">
+                    {{widget('image', 'logo14', {
+                      'src': asset("/images/gallery/portfolio/gcm.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo15 col4">
+                    {{widget('image', 'logo15', {
+                      'src': asset("/images/gallery/portfolio/geo.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+            <div class="logo16 col4">
+                    {{widget('image', 'logo16', {
+                      'src': asset("/images/gallery/portfolio/group.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo17 col4">
+                    {{widget('image', 'logo17', {
+                      'src': asset("/images/gallery/portfolio/handmade.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo18 col4">
+                    {{widget('image', 'logo18', {
+                      'src': asset("/images/gallery/portfolio/ijento.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo19 col4">
+                    {{widget('image', 'logo19', {
+                      'src': asset("/images/gallery/portfolio/incrowd.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo20 col4">
+                    {{widget('image', 'logo20', {
+                      'src': asset("/images/gallery/portfolio/jitter.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo21 col4">
+                    {{widget('image', 'logo21', {
+                      'src': asset("/images/gallery/portfolio/lodg.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo22 col4">
+                    {{widget('image', 'logo22', {
+                      'src': asset("/images/gallery/portfolio/marf.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo23 col4">
+                    {{widget('image', 'logo23', {
+                      'src': asset("/images/gallery/portfolio/mobile.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo24 col4">
+                    {{widget('image', 'logo24', {
+                      'src': asset("/images/gallery/portfolio/mysport.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo25 col4">
+                    {{widget('image', 'logo25', {
+                      'src': asset("/images/gallery/portfolio/nubera.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo26 col4">
+                    {{widget('image', 'logo26', {
+                      'src': asset("/images/gallery/portfolio/priv.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo27 col4">
+                    {{widget('image', 'logo27', {
+                      'src': asset("/images/gallery/portfolio/rif.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo28 col4">
+                    {{widget('image', 'logo28', {
+                      'src': asset("/images/gallery/portfolio/scy.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo29 col4">
+                    {{widget('image', 'logo29', {
+                      'src': asset("/images/gallery/portfolio/social.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo30 col4">
+                    {{widget('image', 'logo30', {
+                      'src': asset("/images/gallery/portfolio/taptap.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+                <div class="logo31 col4">
+                    {{widget('image', 'logo31', {
+                      'src': asset("/images/gallery/portfolio/yui.jpg"),
+                      'align': 'widget-align-center'
+                    })|raw}}
+                </div>
+            </div>
+            <!-- End Homepage Logo Content -->
 
         </div>
 

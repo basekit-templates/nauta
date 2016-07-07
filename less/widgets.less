@@ -405,118 +405,36 @@
     }
 }
 
-
+// Team page
+.imagewidget__image-link {
+    &:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+        &:after {
+            content: "Click to view profile";
+            background-color: #f6f7fd;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: inline-block;
+            color: #888888;
+            font-size: 16px;
+            .flex(@display: flex);
+            .align-items(@align: center);
+            .justify-content(@justify: center);
+        }
+    }
+}
 
 
 // -----------------------------
 // 6.  #Gallery
 // -----------------------------
-
-// Team Page
-// --------------
-
-// Row 1 and 2
-.row1, 
-.row2 {
-    .gallery__image-link {
-        padding-bottom: 100%;
-    }
-    .gallery__gallery-item {
-        position: relative;
-        margin-bottom: 15px;
-    }
-    .gallery__caption {
-        display: block;
-    }
-    .gallery__image-title:after {
-        display: none;
-    }
-    .gallery__figure:hover .gallery__caption {
-        display: block;
-        position: relative;
-        text-align: left;
-        padding: 10px;
-        opacity: 1;
-    }
-    .gallery__caption {
-        background-color: transparent;
-        border: 0;
-        margin-top: 10px;
-        @media @mobile {
-            margin-top: 0;
-        }
-    }
-    .image-title {
-        font-family:@font-swatch3-font-family!important;
-        font-size: 20px!important;
-        font-weight: @font-swatch3-font-weight;
-        line-height:@font-swatch3-line-height;
-        color: @color__h3--text!important;
-        letter-spacing: 0!important;
-        @media @mobile {
-            font-size:16px!important;
-        }
-    }
-    .image-description {
-        font-family:@font-swatch5-font-family;
-        font-size:@font-swatch5-font-size;
-        font-weight: @font-swatch5-font-weight;
-        line-height:@font-swatch5-line-height;
-        color: @color__p--text!important;
-        letter-spacing: @font-swatch5-letter-spacing;
-    }
-}
-    
-// Row 1
-.row1 {
-    .gallery__gallery-item {
-        width: 24%;
-        @media @tablet {
-            width: 30%;
-        }
-        @media @mobile {
-            width: 45%;
-        }
-    }
-}
-
-// Row 2
-.row2 {
-    margin-top: 40px;
-    .gallery__gallery-item {
-        width: 19%;
-        @media @tablet {
-            width: 30%;
-        }
-        @media @mobile {
-            width: 45%;
-        }
-    }
-}
-
-// Portfolio Page
-// --------------
-
-.portfolio-gallery {
-    .gallery__gallery-item {
-        width: 19%;
-    }
-    .gallery__image {
-        display: block;
-    }
-    .gallery__image-link {
-        background-image: none!important;
-        padding-bottom: 0!important;
-    }
-    .gallery__figure:hover .gallery__caption {
-        background-color: rgb(246, 247, 253);
-        border: 0;
-    }
-    .gallery__caption .image-description {
-        color: #a0a0a0;
-        line-height: 26px;
-    }
-}
 
 // The following styles give you a three column gallery layout with a
 // coloured overlay
