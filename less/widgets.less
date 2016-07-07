@@ -405,7 +405,9 @@
     }
 }
 
-// Team page
+// Team Images
+// --------------
+
 .imagewidget__image-link {
     &:hover {
     -webkit-transition: all 0.5s ease;
@@ -430,6 +432,38 @@
         }
     }
 }
+
+// Homepage Images
+// --------------
+
+.homepage-image-website-hover {
+    .imagewidget__image-link {
+        &:hover {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+            &:after {
+                content: "Click to view website";
+                background-color: #f6f7fd;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: inline-block;
+                color: #888888;
+                font-size: 16px;
+                .flex(@display: flex);
+                .align-items(@align: center);
+                .justify-content(@justify: center);
+            }
+        }
+    }
+}
+
+
 
 
 // -----------------------------
