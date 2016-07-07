@@ -12,71 +12,87 @@
 	<div class="container">
 		<section class="template-content">
 
-        <div class="portfolio-images">
-        <!-- Homepage Logo Content -->
-            <div class="homepage-logo-content space">
-                <div class="team1 col4">
-                    {{widget('image', 'team1', {
-                      'src': asset("/images/gallery/team/team1.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
+            <div class="team-images">
+            <!-- Homepage Logo Content -->
+                <div class="homepage-logo-content space">
+                    <div class="team1 col4">
+                        {{widget('image', 'team1', {
+                          'src': asset("/images/gallery/team/team1.jpg"),
+                            'title': 'Dominic Endicott',
+                            'description': 'General Partner',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team2 col4">
+                        {{widget('image', 'team2', {
+                          'src': asset("/images/gallery/team/team2.jpg"),
+                            'title': 'Carles Ferrer',
+                            'description': 'General Partner',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team3 col4">
+                        {{widget('image', 'team3', {
+                          'src': asset("/images/gallery/team/team3.jpg"),
+                            'title': 'Daniel Sánchez',
+                            'description': 'General Partner',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team4 col4">
+                        {{widget('image', 'team4', {
+                          'src': asset("/images/gallery/team/team4.jpg"),
+                            'title': 'Jordi Viñas',
+                            'description': 'General Partner',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
                 </div>
-                <div class="team2 col4">
-                    {{widget('image', 'team2', {
-                      'src': asset("/images/gallery/team/team2.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                <div class="team3 col4">
-                    {{widget('image', 'team3', {
-                      'src': asset("/images/gallery/team/team3.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                <div class="team4 col4">
-                    {{widget('image', 'team4', {
-                      'src': asset("/images/gallery/team/team4.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                </div>
-                            <div class="homepage-logo-content">
-                <div class="team5 col5">
-                    {{widget('image', 'team5', {
-                      'src': asset("/images/gallery/team/team5.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                <div class="team6 col5">
-                    {{widget('image', 'team6', {
-                      'src': asset("/images/gallery/team/team6.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                <div class="team7 col5">
-                    {{widget('image', 'team7', {
-                      'src': asset("/images/gallery/team/team7.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                <div class="team8 col5">
-                    {{widget('image', 'team8', {
-                      'src': asset("/images/gallery/team/team8.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
-                </div>
-                <div class="team9 col5">
-                    {{widget('image', 'tea9', {
-                      'src': asset("/images/gallery/team/team9.jpg"),
-                      'align': 'widget-align-center'
-                    })|raw}}
+                <div class="homepage-logo-content">
+                    <div class="team5 col5">
+                        {{widget('image', 'team5', {
+                          'src': asset("/images/gallery/team/team5.jpg"),
+                            'title': 'Alfonso Bassols',
+                            'description': 'Operations & Finance',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team6 col5">
+                        {{widget('image', 'team6', {
+                          'src': asset("/images/gallery/team/team6.jpg"),
+                            'title': 'Magnus Rinnan Gaarder',
+                            'description': ' Investment Manager',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team7 col5">
+                        {{widget('image', 'team7', {
+                          'src': asset("/images/gallery/team/team7.jpg"),
+                            'title': 'Guillem Sague',
+                            'description': 'Investment Manager',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team8 col5">
+                        {{widget('image', 'team8', {
+                          'src': asset("/images/gallery/team/team8.jpg"),
+                            'title': 'Anna Daviau',
+                            'description': 'Portfolio Manager',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
+                    <div class="team9 col5">
+                        {{widget('image', 'tea9', {
+                          'src': asset("/images/gallery/team/team9.jpg"),
+                            'title': 'Bob Borges',
+                            'description': 'Investment Manager',
+                          'align': 'widget-align-center'
+                        })|raw}}
+                    </div>
                 </div>
             </div>
-        </div>
-
 		</section>
 	</div>
-
 </div>
 
 {% include "includes/footer.twig" %}
