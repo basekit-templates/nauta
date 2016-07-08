@@ -394,8 +394,8 @@ input.input[type=search],
         padding: 0;
         border-bottom: 1px solid @color-swatch7;
         padding-top: 50px;
-        @media @tablet {
-            padding-top: 0;
+        @media @mobile {
+            padding-top: 30px;
         }
     }
     // Blog Image
@@ -462,10 +462,7 @@ input.input[type=search],
 
         // Post Content
         .post-content {
-            padding: 20px;
-        }
-        .read-more {
-            margin-top: 5px;
+            padding: 20px 0;
         }
 
         // Post Footer
@@ -499,20 +496,29 @@ input.input[type=search],
     max-width: inherit;
     padding: 0;
 }
+
 .blogpostlist__title-link:after,
 .blogpost__post-title:after {
     display: none;
 }
+
+.blogpostlist__tpost-title {
+    margin-bottom: 10px;
+}
+
 .blogpostlist__title-link {
     color: @font-swatch4-color;
 }
+
 .blogpostlist__post-header {
     margin: 0 auto;
 }
+
 .blogpostlist__post-image,
 .blogpostlist__post-content {
     text-align: inherit;
 }
+
 .blogpostlist__post-footer {
     padding: 10px 5px 30px;
 }
