@@ -454,9 +454,70 @@
     }
 }
 
-// Homepage Images
-// --------------
+// Portfolio Images
+// ----------------
 
+.portfolio-images {
+    .imagewidget__image-link {
+        &:hover {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+            &:after {
+                content: "Click to view profile";
+                background-color: #f6f7fd;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                right: 10px;
+                bottom: 0;
+                display: inline-block;
+                color: #888888;
+                font-size: 16px;
+                .flex(@display: flex);
+                .align-items(@align: center);
+                .justify-content(@justify: center);
+                height: 155px;
+            }
+        }
+    }
+}
+
+// Homepage Images
+// ---------------
+
+// Homepage Profile Images
+.home-col {
+    .imagewidget__image-link {
+        &:hover {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+            &:after {
+                content: "Click to view profile";
+                background-color: #f6f7fd;
+                position: absolute;
+                top: 0;
+                left: 5px;
+                right: 5px;
+                bottom: 0;
+                display: inline-block;
+                color: #888888;
+                font-size: 16px;
+                .flex(@display: flex);
+                .align-items(@align: center);
+                .justify-content(@justify: center);
+                height: 295px;
+            }
+        }
+    }
+}
+
+// Homepage Website Images
 .homepage-image-website-hover {
     .imagewidget__image-link {
         &:hover {
@@ -479,6 +540,7 @@
                 .flex(@display: flex);
                 .align-items(@align: center);
                 .justify-content(@justify: center);
+                display: none;
             }
         }
     }
