@@ -12,25 +12,25 @@
                     <button class="js-pull  navigation-toggle  icon  icon--bars  extendednavigation__navigation-toggle">Menu</button>
                     <nav class="navigation-body  extendednavigation__navigation-body">
                         <ul class="navigation-list  extendednavigation__navigation-list  js-menu-list  itemcount-9">
-                            <li class="navigation-item  extendednavigation__navigation-item home  selected" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item  {% if page.title == "Home" %} selected {% endif %}" itemprop="name">
                                 <a href="/" class="item-name  extendednavigation__item-name" itemprop="url">Home</a>
                             </li>
-                            <li class="navigation-item  extendednavigation__navigation-item page" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item page  {% if page.title == "Portfolio" %} selected {% endif %}" itemprop="name">
                                 <a href="/portfolio" class="item-name  extendednavigation__item-name" itemprop="url">Portfolio</a>
                             </li>
-                            <li class="navigation-item  extendednavigation__navigation-item page" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item page  {% if page.title == "Approach" %} selected {% endif %}" itemprop="name">
                                 <a href="/approach" class="item-name  extendednavigation__item-name" itemprop="url">Approach</a>
                             </li>
-                            <li class="navigation-item  extendednavigation__navigation-item page" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item page  {% if page.title == "News" %} selected {% endif %}" itemprop="name">
                                 <a href="/blog" class="item-name  extendednavigation__item-name" itemprop="url">News</a>
                             </li>
-                            <li class="navigation-item  extendednavigation__navigation-item page" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item page  {% if page.title == "Team" %} selected {% endif %}" itemprop="name">
                                 <a href="/team" class="item-name  extendednavigation__item-name" itemprop="url">Team</a>
                             </li>
-                            <li class="navigation-item  extendednavigation__navigation-item page" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item page  {% if page.title == "Careers" %} selected {% endif %}" itemprop="name">
                                 <a href="/careers" class="item-name  extendednavigation__item-name" itemprop="url">Careers</a>
                             </li>
-                            <li class="navigation-item  extendednavigation__navigation-item page" itemprop="name">
+                            <li class="navigation-item  extendednavigation__navigation-item page  {% if page.title == "Contact" %} selected {% endif %}" itemprop="name">
                                 <a href="/contact" class="item-name  extendednavigation__item-name" itemprop="url">Contact</a>
                             </li>
                         </ul>
