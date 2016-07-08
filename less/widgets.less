@@ -247,14 +247,14 @@
     max-width: 80%;
     vertical-align: middle;
     display: table-cell;
-    background-color: fade(@color__feature-content--background, 30%);
+    background-color: fade(@color__feature-content--background, 45%);
     padding: 0;
 
     @media @tablet {
         max-width:100%;
     }
     @media @mobile {
-        padding: 0 2%;
+        padding: 0 5%;
     }
 }
 
@@ -276,26 +276,30 @@
 // ---------------
 
 .feature__headline {
-    max-width: 60%;
+    max-width: 68%;
+
     @media @tablet {
-        max-width: 100%;
-        font-size: bkscale(@font-swatch8-font-size,0.8);
-        line-height: bkscale(@font-swatch8-line-height,0.9);
+        max-width: 90%;
+        font-size: 42px;
+        line-height: 52px;
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch8-font-size,0.7);
-        line-height: bkscale(@font-swatch8-line-height,0.7);
+        font-size: 32px;
+        line-height: 42px;
     }
 }
 
 .feature__strapline {
     max-width: 60%;
+    margin: 20px 0;
+
     @media @tablet {
         max-width: 100%;
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.9);
     }
     @media @mobile {
+        margin: 10px 0;
         font-size: bkscale(@font-swatch9-font-size,0.8);
         line-height: bkscale(@font-swatch9-line-height,0.8);
     }
@@ -863,8 +867,14 @@ button, .button {
 }
 
 .feature__button {
-    padding: 8px 30px;
-    margin: 10px 0 0 0; 
+    padding: 15px 26px;
+    margin: 10px 0 0 0;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+
+    @media @tablet {
+        padding: 10px 16px;
+    }
+
     &:hover {
         border: 1px solid transparent;
     }

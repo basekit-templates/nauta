@@ -80,36 +80,31 @@
 <!-- End Footer 2 -->
 
 <!-- Footer 3 -->
-<footer class="template-footer">
+<footer class="sub-footer">
+    <div class="container">
 
-	<div class="container">
-        <div class="template-footer__column1 col1">
-        <div class="copyright">
-            {{widget('profile', 'copyright', {'profileType':'copyright', 'copyright':'profile'})|raw}}
-            </div>
-        <div class="terms">
-            {{widget('content', 'terms-conditions', {
-                content: '<p>
-                TERMS & CONDITIONS</p>'
-            })|raw}}
-
-            </div>
-        <div class="cookies">
-            {{widget('content', 'cookies-policy', {
-                content: '<p>
-                COOKIES POLICY</p>'
-            })|raw}}
-            </div>
+        <div class="sub-footer-item">
+            <ul class="sub-footer-list">
+                <li class="sub-footer-list-item">
+                    <h5>Copyright © {{ "now"|date("Y") }} Nauta Captial.</h5>
+                </li>
+                <li class="sub-footer-list-item">
+                    <h5><a href="/terms-and-conditions" class="sub-footer-link">Terms &amp; Conditions</a></h5>
+                </li>
+                <li class="sub-footer-list-item">
+                    <h5><a href="/cookie-policy" class="sub-footer-link">Cookie Policy</a></h5>
+                </li>
+            </ul>
         </div>
 
-
-        <div class="template-footer__column2 col2">
-            {{widget('profile', 'footersocialicons', {
+        <div class="sub-footer-item  sub-footer-item--social">
+            {{widget('profile', 'socialicons', {
                 'profileType':'socialicons'
             })|raw}}
         </div>
 
-	</div>
+    </div>
+</footer>
 
 </footer>
 <!-- End Footer 3 -->
