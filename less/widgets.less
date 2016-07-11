@@ -243,12 +243,16 @@
     display: table-cell;
     background-color: fade(@color__feature-content--background, 45%);
     padding: 0;
+    padding-bottom: 100px;
 
     @media @tablet {
-        max-width:100%;
+        max-width: 100%;
+        padding-bottom: 0;
+        padding-bottom: 150px;
     }
     @media @mobile {
         padding: 0 5%;
+        padding-bottom: 0;
     }
 }
 
@@ -270,7 +274,7 @@
 // ---------------
 
 .feature__headline {
-    max-width: 66%;
+    max-width: 65%;
 
     @media @tablet {
         max-width: 90%;
@@ -284,7 +288,7 @@
 }
 
 .feature__strapline {
-    max-width: 66%;
+    max-width: 65%;
     margin: 20px 0;
 
     @media @tablet {
