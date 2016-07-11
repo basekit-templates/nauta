@@ -399,12 +399,32 @@
 
 .team-images {
     .imagewidget__image-link {
-        &:hover {
-            &:after {
-                    height: 100%;
+        &:after {
+            opacity: 0;
+            content: "Click to view profile";
+            background-color: #f6f7fd;
+            position: absolute;
+            top: 0;
+            left: 5px;
+            right: 5px;
+            bottom: 0;
+            display: inline-block;
+            color: #888888;
+            font-size: 16px;
+            .flex(@display: flex);
+            .align-items(@align: center);
+            .justify-content(@justify: center);
+            height: 100%;
+            font-weight: 400;
+            .gallery-transition;
                 @media @tablet {
                     display: none;
                 }
+            }
+            &:hover:after {
+                opacity: 1;
+                @media @tablet {
+                display: none;
             }
         }
     }
@@ -438,11 +458,32 @@
 
 .portfolio-images {
     .imagewidget__image-link {
-        &:hover {
             &:after {
+                opacity: 0;
+                content: "Click to view profile";
+                background-color: #f6f7fd;
+                position: absolute;
+                top: 0;
+                left: 5px;
+                right: 5px;
+                bottom: 0;
+                display: inline-block;
+                color: #888888;
+                font-size: 16px;
+                .flex(@display: flex);
+                .align-items(@align: center);
+                .justify-content(@justify: center);
+                height: 100%;
+                font-weight: 400;
+                .gallery-transition;
                 @media @tablet {
                     display: none;
                 }
+            }    
+            &:hover:after {
+                opacity: 1;
+                @media @tablet {
+                display: none;
             }
         }
     }
@@ -474,34 +515,6 @@
             &:after {
                 display: none;
             }
-        }
-    }
-}
-
-.imagewidget__image-link {
-    &:after {
-        opacity: 0;
-        content: "Click to view profile";
-        background-color: #f6f7fd;
-        position: absolute;
-        top: 0;
-        left: 5px;
-        right: 5px;
-        bottom: 0;
-        display: inline-block;
-        color: #888888;
-        font-size: 16px;
-        .flex(@display: flex);
-        .align-items(@align: center);
-        .justify-content(@justify: center);
-        height: 100%;
-        font-weight: 400;
-        .gallery-transition;
-    }
-    &:hover:after {
-        opacity: 1;
-        @media @tablet {
-            display: none;
         }
     }
 }
