@@ -1,0 +1,26 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+<div class="bk-pt-default">
+
+    <div class="page-title">
+        {{widget('content', 'blogposttitle', {
+            content: '<h1>News</h1>'
+        })|raw}}
+    </div>
+
+    <div class="container">
+        <section class="template-content">
+
+            {{zone('main')|raw}}
+
+        </section>
+    </div>
+
+</div>
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}
