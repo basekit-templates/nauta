@@ -399,16 +399,26 @@
 
 .team-images {
     .imagewidget__image-link {
+        &:after {
+            left: 11px!important;
+            right: 11px!important;
+        }
         &:hover {
             &:after {
-                left: 5px!important;
-                right: 5px!important;
-                height: 79%;
+                left: 11px!important;
+                right: 11px!important;
                 @media @tablet {
                     display: none;
                 }
             }
         }
+    }
+}
+
+.team-content {
+    padding: 10px;
+    @media @tablet {
+        text-align: center;
     }
 }
 
