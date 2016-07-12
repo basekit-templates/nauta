@@ -113,9 +113,8 @@ input.input[type=search],
         width: 100%;
         background-color: rgba(0, 0, 0, 0.4);
 
-        @media @tablet {
-            position: relative;
-        }
+        position: absolute;
+        bottom: 0;
 
         .contain {
             display: -webkit-flexbox;
@@ -175,8 +174,8 @@ input.input[type=search],
             color: white;
         }
         // Transparent background on Desktop
-        @media only screen and (min-width: 768px) {
-            position: absolute;
+        @media @tablet {
+            position: relative;
             bottom: 0;
             width: 100%;
         }
