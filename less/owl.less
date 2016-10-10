@@ -87,7 +87,7 @@
 .owl-theme .owl-controls .owl-buttons div {
     color: transparent;
     font-size: 10px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
         color: #fff;
     }
 }
@@ -97,14 +97,16 @@
     position: absolute;
     top: 40%;
     width: 100%;
-    @media (max-width: 1024px) {
-        top: -54px;
+    @media (max-width: 1400px) {
+        bottom: 0px;
+        right: 40px;
+        top: 100%;
     }
 }
 
 // Feature Page - Buttons Styles
 .owl-carousel.features .owl-controls {
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
         top: -54px;
         .owl-prev, .owl-next {
             padding: 1.5px 7px;
@@ -124,9 +126,9 @@
 // Prev
 .owl-prev {
     position: absolute;
-    left: -36px;
+    left: -46px;
     background: image('/js/owl-carousel/arrow-prev.png') no-repeat center;
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
         left: inherit;
         right: 48px;
         background-color: rgba(0, 0, 0, 0.3);
@@ -142,9 +144,9 @@
 // Next
 .owl-next {
     position: absolute;
-    right: -25px;
+    right: 45px;
     background: image('/js/owl-carousel/arrow-next.png') no-repeat center;
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
         right: 0;
         background-color: rgba(0, 0, 0, 0.3);
         background-image: none;

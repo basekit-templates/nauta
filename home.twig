@@ -35,83 +35,23 @@ for Global Disruptors',
 </div>
 <!-- End Homepage Feature -->
 
-<!-- Homepage Logo Content -->
-<div class="homepage-logo-content container">
-	<div class="logo1 col4 home-col">
-		{{widget('image', 'img1', {
-		  'src': asset("images/client1.jpg"),
-		  'align': 'widget-align-center'
-		})|raw}}
-		<div class="homepage-image-website-hover">
-			{{widget('image', 'homepage-logo1', {
-			  'src': asset("images/logo1.jpg"),
-			  'title': 'JUAN LOBATO',
-			  'description': 'www.basekit.com',
-			  'align': 'widget-align-center'
-			})|raw}}
-		</div>
-	</div>
-	<div class="logo2 col4 home-col">
-		{{widget('image', 'img2', {
-		  'src': asset("images/client2.jpg"),
-		  'align': 'widget-align-center'
-		})|raw}}
-		<div class="homepage-image-website-hover">
-			{{widget('image', 'hompage-logo2', {
-			  'src': asset("images/logo2.jpg"),
-			  'title': 'GILES PALMER',
-			  'description': 'www.brandwatch.com',
-			  'align': 'widget-align-center'
-			})|raw}}
-		</div>
-	</div>
-	<div class="logo3 col4 home-col">
-		{{widget('image', 'img3', {
-		  'src': asset("images/client3.jpg"),
-		  'align': 'widget-align-center'
-		})|raw}}
-		<div class="homepage-image-website-hover">
-			{{widget('image', 'hompage-logo3', {
-			  'src': asset("images/logo3.jpg"),
-			  'title': 'ALVARO DEL CASTILLO',
-			  'description': 'www.taptapnetworks.com',
-			  'align': 'widget-align-center'
-			})|raw}}
-		</div>
-	</div>
-	<div class="logo4 col4 home-col">
-		{{widget('image', 'img4', {
-		  'src': asset("images/client4.jpg"),
-		  'align': 'widget-align-center'
-		})|raw}}
-		<div class="homepage-image-website-hover">
-			{{widget('image', 'hompage-logo4', {
-			  'src': asset("images/logo4.jpg"),
-			  'title': 'CRISTOPHE PRIMAULT',
-			  'description': 'www.bubera.com',
-			  'align': 'widget-align-center'
-			})|raw}}
-		</div>
-	</div>
-</div>
-<!-- End Homepage Logo Content -->
-
 <!-- Owl Carousel !-->
 <div id="owl-demo" class="owl-carousel container">
     <!-- Slide 1 !-->
     <div class="item">
         <div class="img-post">
-            {{widget('image', 'client-block1', { 'src': asset('images/recent-news/Home_Page_Cutting_01.jpg')})|raw}}
-            {{widget('image', 'logo-block1', { 'src': asset('images/recent-news/Home_Page_Cutting_01.jpg')})|raw}}
-            {{widget('content', 'title-block1', {"content":'<p><b>Image Title One</b> <span class="text-tag red">Category</span></p>'})|raw}}
-            {{widget('content', 'info-block1', {"content":'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>'})|raw}}
+            {{widget('image', 'client-block1', { 'src': asset('images/carousel/client1.jpg')})|raw}}
+            {{widget('image', 'logo-block1', { 'src': asset('images/carousel/logo1.jpg')})|raw}}
+            {{widget('content', 'title-block1', {"content":'<p><b>Ben Edmond</b> </p>'})|raw}}
+            {{widget('content', 'info-block1', {"content":'<p>Connected2fiber</p>'})|raw}}
+            {{widget('content', 'website-block1', {"content":'<p>www.connected2fiber.com</p>'})|raw}}
         </div>
     </div>
     <!-- Slide 2 !-->
     <div class="item">
         <div class="img-post">
-            {{widget('image', 'client-block2', { 'src': asset('images/recent-news/Home_Page_Cutting_02.jpg')})|raw}}
-            {{widget('image', 'logo-block2', { 'src': asset('images/recent-news/Home_Page_Cutting_02.jpg')})|raw}}
+            {{widget('image', 'client-block2', { 'src': asset('images/carousel/client2.jpg')})|raw}}
+            {{widget('image', 'logo-block2', { 'src': asset('images/carousel/logo2.jpg')})|raw}}
             {{widget('content', 'title-block2', {"content":'<p><b>Image Title Two</b> <span class="text-tag red">Category</span></p>'})|raw}}
             {{widget('content', 'info-block2', {"content":'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>'})|raw}}
         </div>
@@ -119,8 +59,8 @@ for Global Disruptors',
     <!-- Slide 3 !-->
     <div class="item">
          <div class="img-post">
-            {{widget('image', 'client-block3', { 'src': asset('images/recent-news/Home_Page_Cutting_03.jpg')})|raw}}
-            {{widget('image', 'logo-block3', { 'src': asset('images/recent-news/Home_Page_Cutting_02.jpg')})|raw}}
+            {{widget('image', 'client-block3', { 'src': asset('images/carousel/client3.jpg')})|raw}}
+            {{widget('image', 'logo-block3', { 'src': asset('images/carousel/logo3.jpg')})|raw}}
             {{widget('content', 'title-block3', {"content":'<p><b>Image Title Three</b> <span class="text-tag red">Category</span></p>'})|raw}}
             {{widget('content', 'info-block3', {"content":'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>'})|raw}}
         </div>
@@ -128,7 +68,7 @@ for Global Disruptors',
     <!-- Slide 4 !-->
     <div class="item">
          <div class="img-post">
-            {{widget('image', 'client-block4', { 'src': asset('images/recent-news/Home_Page_Cutting_04.jpg')})|raw}}
+            {{widget('image', 'client-block4', { 'src': asset('images/carousel/client4.jpg')})|raw}}
             {{widget('image', 'logo-block4', { 'src': asset('images/recent-news/Home_Page_Cutting_02.jpg')})|raw}}
             {{widget('content', 'title-block4', {"content":'<p><b>Image Title Four</b> <span class="text-tag red">Category</span></p>'})|raw}}
             {{widget('content', 'info-block4', {"content":'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>'})|raw}}
@@ -137,7 +77,7 @@ for Global Disruptors',
     <!-- Slide 5 !-->
     <div class="item">
          <div class="img-post">
-            {{widget('image', 'client-block5', { 'src': asset('images/recent-news/Home_Page_Cutting_05.jpg')})|raw}}
+            {{widget('image', 'client-block5', { 'src': asset('images/carousel/client5.jpg')})|raw}}
             {{widget('image', 'client-block5', { 'src': asset('images/recent-news/Home_Page_Cutting_02.jpg')})|raw}}
             {{widget('content', 'title-block5', {"content":'<p><b>Image Title Five</b> <span class="text-tag red">Category</span></p>'})|raw}}
             {{widget('content', 'info-block5', {"content":'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>'})|raw}}
@@ -146,7 +86,7 @@ for Global Disruptors',
     <!-- Slide 6 !-->
     <div class="item">
          <div class="img-post">
-            {{widget('image', 'client-block6', { 'src': asset('images/recent-news/Home_Page_Cutting_01.jpg')})|raw}}
+            {{widget('image', 'client-block6', { 'src': asset('images/carousel/client6.jpg')})|raw}}
             {{widget('image', 'logo-block6', { 'src': asset('images/recent-news/Home_Page_Cutting_02.jpg')})|raw}}
             {{widget('content', 'title-block6', {"content":'<p><b>Image Title Six</b> <span class="text-tag red">Category</span></p>'})|raw}}
             {{widget('content', 'info-block6', {"content":'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>'})|raw}}
