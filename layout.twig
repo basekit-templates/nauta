@@ -35,22 +35,40 @@
     {% include basekit.bodyScript %}
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ asset('libs/jquery-1.10.2.min.js')}}"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{{asset('/js/slider/js/jquery.easing.min.js')}}"></script>
+<script src="{{asset('/js/owl-carousel/owl.carousel.js')}}"></script>
 
-    	<!-- Nav Menu Script -->
-        <script>
-            // Toggles class open to display/hide the whole navigation
-            $( ".navigation-toggle" ).click(function() {
-                $( ".bk-extendednavigation" ).toggleClass( "open" );
-            });
-            // Togglse class open to display/hide folders
-           // $( ".navigation-item.folder .item-name--parent" ).each(function() {
-           //      $( this ).click(function() {
-           //              $( this ).parent( ".navigation-item.folder" ).toggleClass( "open" );
-           //      });
-           //  });
-        </script>
+<script>
+    $(document).ready(function() {
+
+      $("#owl-demo").owlCarousel({
+        lazyLoad : true,
+        navigation : true,
+        slideSpeed: 500,
+        autoPlay: true,
+        stopOnHover: true,
+        navigationText: ["Prev","Next"],
+        items : 4, 
+        itemsDesktop : false, 
+        itemsDesktopSmall : false,
+        itemsTablet: [769,2], 
+        itemsMobile : [478,1]
+      });
+    });
+</script>  
+
+
+<!-- Nav Menu Script -->
+<script>
+    // Toggles class open to display/hide the whole navigation
+    $( ".navigation-toggle" ).click(function() {
+        $( ".bk-extendednavigation" ).toggleClass( "open" );
+    });
+</script>
+
+{% block bodyscripts %}
+{% endblock %}  
 
 </body>
 </html>
