@@ -42,6 +42,15 @@
 <script>
     $(document).ready(function() {
 
+        //Sort random function
+        function random(owlSelector){
+          owlSelector.children().sort(function(){
+              return Math.round(Math.random()) - 0.5;
+          }).each(function(){
+            $(this).appendTo(owlSelector);
+          });
+        }
+
       $("#owl-demo").owlCarousel({
         lazyLoad : true,
         navigation : true,
@@ -53,7 +62,11 @@
         itemsDesktop : false, 
         itemsDesktopSmall : false,
         itemsTablet: [769,2], 
-        itemsMobile : [478,1]
+        itemsMobile : [478,1],
+        beforeInit : function(elem){
+        //Parameter elem pointing to $("#owl-demo")
+        random(elem);
+        }
       });
     });
 </script>  
