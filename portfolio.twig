@@ -2,21 +2,25 @@
 
 {% block content %}
 
-<div class="bk-pt-default portfolio--page">
+<div class="portfolio-page">
 
-{% include "includes/header.twig" %}
-
-  <div class="page-title">
-    {{widget('pagetitle', 'title', {})|raw}}
-  </div>
-
-  <div class="container">
-    <section class="template-content">
-
-        {{zone('main')|raw}}
-
-    </section>
-  </div>
+    <div class="bk-pt-default">
+    
+    {% include "includes/header.twig" %}
+    
+      <div class="page-title">
+        {{widget('pagetitle', 'title', {})|raw}}
+      </div>
+    
+      <div class="container">
+        <section class="template-content">
+    
+            {{zone('main')|raw}}
+    
+        </section>
+      </div>
+    
+    </div>
 
 </div>
 
