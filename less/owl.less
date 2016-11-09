@@ -101,11 +101,6 @@
     position: absolute;
     top: 40%;
     width: 100%;
-    @media (max-width: 1400px) {
-        bottom: 0px;
-        right: 22px;
-        top: -42px;
-    }
     @media @tablet {
         right: 0;
     }
@@ -136,15 +131,7 @@
     left: -46px;
     background: image('/js/owl-carousel/arrow-prev.png') no-repeat center;
     @media (max-width: 1400px) {
-        left: inherit;
-        right: 48px;
-        background-color: rgba(0, 0, 0, 0.3);
-        background-image: none;
-        padding: 4px 10px;
-        font-size: 12px!important;
-        &:hover {
-            background: rgba(0,0,0,0.6);
-        }
+    left: -20px;
     }
 }
 
@@ -153,15 +140,8 @@
     position: absolute;
     right: -20px;
     background: image('/js/owl-carousel/arrow-next.png') no-repeat center;
-    @media (max-width: 1400px) {
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-        background-image: none;
-        padding: 4px 10px;
-        font-size: 12px!important;
-        &:hover {
-            background: rgba(0,0,0,0.6);
-        }
+        @media (max-width: 1400px) {
+    right: -10px;
     }
 }
 
