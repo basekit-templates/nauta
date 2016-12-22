@@ -587,6 +587,12 @@
 .responsiveslideshow__figure {
     position: relative;
     min-height: 650px;
+    @media @tablet {
+        min-height: 500px;
+    }
+    @media @mobile {
+        min-height: 350px;
+    }
 }
 
 .responsiveslideshow__slideshow-controls,
@@ -607,6 +613,9 @@
     margin: 0 auto;
     padding: 0 2%;
     z-index: 1;
+    @media @tablet {
+        padding: 0 14%;
+    }
 }
 
 .responsiveslideshow__image-title {
@@ -616,6 +625,14 @@
     line-height:@font-swatch8-line-height;
     color: white;
     letter-spacing: @font-swatch8-letter-spacing;
+    @media @tablet {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    @media @mobile {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
 
 .responsiveslideshow__image-description {
@@ -625,6 +642,10 @@
     line-height:@font-swatch9-line-height;
     color: white;
     letter-spacing: @font-swatch9-letter-spacing;
+    @media @mobile {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 
@@ -655,6 +676,12 @@
     -ms-justify-content: flex-start;
     -ms-flex-pack: flex-start;
     justify-content: flex-start;
+    @media @tablet {
+        min-height: 500px;
+    }
+    @media @mobile {
+        min-height: 350px;
+    }
 }
 
 .responsiveslideshow__figure:after {
@@ -685,14 +712,14 @@
     bottom: 140px;
     width: 100%;
     padding: 20px;
-    @media @mobile {
-        display: none;
-    }
 }
 
 .responsiveslideshow__image-title, 
 .responsiveslideshow__image-description {
     max-width: 60%;
+    @media @tablet {
+        max-width: 100%;
+    }
 }
 
 // Slideshow Buttons
