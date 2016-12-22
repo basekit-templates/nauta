@@ -586,7 +586,7 @@
 .responsiveslideshow, 
 .responsiveslideshow__figure {
     position: relative;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .responsiveslideshow__slideshow-controls,
@@ -596,7 +596,35 @@
 }
 
 .responsiveslideshow .caption {
-    background-color: fade(@color-swatch3, 20%);
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: left;
+    max-width: 70%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2%;
+    z-index: 1;
+}
+
+.responsiveslideshow__image-title {
+    font-family:@font-swatch8-font-family;
+    font-size: @font-swatch8-font-size;
+    font-weight: @font-swatch8-font-weight;
+    line-height:@font-swatch8-line-height;
+    color: white;
+    letter-spacing: @font-swatch8-letter-spacing;
+}
+
+.responsiveslideshow__image-description {
+    font-family:@font-swatch9-font-family;
+    font-size: @font-swatch9-font-size;
+    font-weight: @font-swatch9-font-weight;
+    line-height:@font-swatch9-line-height;
+    color: white;
+    letter-spacing: @font-swatch9-letter-spacing;
 }
 
 
@@ -608,6 +636,41 @@
     background-size: cover;
     background-position: center;
 }
+
+.responsiveslideshow .figure {
+    min-height: 600px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    webkit-box-pack: center;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+}
+
+.responsiveslideshow__figure:after {
+    background-color: rgba(0,0,0,0.3);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.responsiveslideshow .contain .figure {
+    background-size: cover;
+}
+
 // Hide Img Element
 .responsiveslideshow__image {
     display: none;
@@ -629,14 +692,8 @@
 
 .responsiveslideshow__image-title, 
 .responsiveslideshow__image-description {
-    padding: 0 10%;
+    max-width: 60%;
 }
-
-.responsiveslideshow__image-title {
-    font-size: @font-swatch3-font-size;
-    line-height: @font-swatch3-line-height;
-}
-
 
 // Slideshow Buttons
 .responsiveslideshow__slide-navigation button {
@@ -648,8 +705,9 @@
 // Navigation Buttons
 .slide-navigation {
     position: absolute;
-    top: 34%;
+    top: 42%;
     width: 100%;
+    z-index: 2;
 }
 
 .previous-button {

@@ -6,15 +6,40 @@
 
 <!-- Homepage Feature -->
 <div class="homepage-feature">
-	{{widget('feature', 'featurehome', {
-		'header': 'Capital-Efficient Foundation 
-for Global Disruptors',
-		'strapline': 'Nauta backs entrepreneurs that share our vision to create global disruptors, in large spaces, where technology has had limited impact.',
-		'defaultBgImg': asset("images/feature-bg.jpg"),
-		'positionTopPercentage': '0',
-		'showBtn': true,
-		buttonText: "View our portfolio"
-	})|raw}}
+    {{widget('responsiveslideshow', 'slideshow', {
+        'duration':'3',
+        'transSpeed': '1000',
+        'transType': 'fade',
+        'showButtons': true,
+        'showBullets': false,
+        'allowPause': false,
+        'allowLoop': true,
+        'showDescription': true,
+        'showTitle': true,
+        'images':[
+          {
+            'imageHeight':'400',
+            'imageWidth':'1000',
+            'url':asset('/images/slideshow/1.jpg'),
+            'title':'Capital-Efficient Foundation for Global Disruptors',
+            'description': 'Nauta backs entrepreneurs that share our vision to create global disruptors, in large spaces, where technology has had limited impact.'
+          },
+          {
+            'imageHeight':'400',
+            'imageWidth':'1000',
+            'url':asset('/images/slideshow/2.jpg'),
+            'title':'First slide title',
+            'description': 'First slide description'
+          },
+          {
+            'imageHeight':'400',
+            'imageWidth':'1000',
+            'url':asset('/images/slideshow/3.jpg'),
+            'title':'First slide title',
+            'description': 'First slide description'
+          }
+        ]
+    })|raw}}
 	<div class="homepage-signup">
 		<div class="contain">
 			<div class="leftdiv">
