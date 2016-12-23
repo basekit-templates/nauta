@@ -250,14 +250,6 @@ input.input[type=search],
     .align-items(@align: flex-end);
     .align-content(@align: flex-end);
 
-    @media @mobile {
-        .flex-wrap(@wrap: wrap);
-        .form-group:last-child {
-            width: 100%;
-            margin-top: 10px;
-            text-align: center;
-        }
-    }
     .form-group {
         margin-bottom: 0;
     }
@@ -265,11 +257,11 @@ input.input[type=search],
         -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
         flex: 0 1 auto;
+        .label {
         @media @mobile {
-            -webkit-flex: 1 1 100%;
-            -ms-flex: 1 1 100%;
-            flex: 1 1 100% !important;
+            font-size: 19px;
         }
+    }
     }
     .form-group:last-child {
         -webkit-flex: 0 0 auto;
@@ -307,7 +299,7 @@ input.input[type=search],
         @media @mobile {
             min-width: inherit;
             margin-left: 0;
-            text-align: center;
+            text-align: left;
             -webkit-flex: 1 1 100%;
             -ms-flex: 1 1 100%;
             flex: 1 1 100%;
