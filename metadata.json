@@ -211,7 +211,7 @@
             "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
         },
         "header": {
-            "color__header--background": "@color-swatch1"
+            "color__header--background": "transparent"
         },
         "footer": {
             "color__footer--background": "#2d2b2c"
