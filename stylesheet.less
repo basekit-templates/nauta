@@ -221,12 +221,15 @@
     margin: 0 auto;
     padding: 0 2%;
     z-index: 99999;
+        @media only screen and (min-width: 770px) and (max-width: 1370px) {
+            padding-left: 7%;
+        }
     @media @tablet {
         padding: 0 14%;
         top: 21%;
     }
     @media @mobile {
-        top: 14px;
+        top: 14%;
     }
     h1 {
         font-family:@font-swatch8-font-family;
@@ -237,6 +240,9 @@
         letter-spacing: @font-swatch8-letter-spacing;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
         max-width: 60%;
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            max-width: 90%;
+        }
         @media @tablet {
             font-size: 38px;
             line-height: 50px;
@@ -256,6 +262,9 @@
         letter-spacing: @font-swatch9-letter-spacing;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
         max-width: 60%;
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            max-width: 80%;
+        }
         @media @tablet {
             max-width: 100%;
         }
