@@ -161,7 +161,7 @@ input.input[type=search],
             -ms-flex-item-align: center;
             align-self: center;
             text-align: right;
-            @media @tablet {
+            @media only screen and (max-width : 960px) {
                 display: none;
             }
             a {
@@ -190,6 +190,93 @@ input.input[type=search],
         }
     }
 }
+
+// Mailchimp Form in Homepage Header
+
+#mc_embed_signup {
+    background-color: transparent;
+}
+
+.mailchimp-nauta .mailchimp-nauta-flex {
+    .flex(@display: flex);
+    .flex-wrap(@wrap: wrap);
+    .justify-content(@justify: flex-end);
+    .align-items(@align: flex-end);
+    .align-content(@align: stretch);
+    label {
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        margin-bottom: 7px;
+        text-align: left;
+        @media only screen and (max-width : 600px) {
+            width: 100%;
+        }
+    }
+    input {
+        -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+        flex: 1 1 30%;
+    }
+    .clear  {
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        @media only screen and (max-width : 400px) {
+            width: 100%;    
+            margin-top: 20px;
+        }
+    }
+}
+
+.mailchimp-nauta {
+    #mc_embed_signup form {
+        padding: 30px 0;
+    }
+    #mc_embed_signup label {
+        color: @color__body--background;
+        font-family: @font__h3--font-family;
+        font-size: @font__h3--font-size;
+        font-weight: @font__h3--font-weight;
+        line-height: @font__h3--line-height;
+        letter-spacing: @font__h3--letter-spacing;
+        margin: 0;
+        padding: 0 20px 6px 0;
+        // Remove label underline
+        &:after {
+            display: none;
+        }
+    }
+    #mc_embed_signup input.email {
+        min-width: 200px;
+        margin: 0;
+        height: 45px;
+        background-color: @color__body--background;
+        border: none;
+        border-radius: 0px;
+    }
+    #mc_embed_signup input.button {
+        width: auto;
+        min-width: initial;
+        height: 45px;
+        padding: 0 15px;
+        margin: 0;
+        background-color: @color__feature-button--background;
+        border: 1px solid @color__feature-button--border;
+        color: @color__feature-button--text;
+        border: none;
+        border-radius: 0px;
+        font-family: @font__button--font-family;
+        font-size: @font__button--font-size;
+        line-height: @font__button--line-height;
+        font-weight: @font__button--font-weight;
+        letter-spacing: @font__button--letter-spacing;
+        &:hover {
+            background-color: @color__feature-button--background--hover;
+        }
+    }
+}
+
 
 // Profile Form in Footer
 .template-footer .signupform .form {
