@@ -161,7 +161,7 @@ input.input[type=search],
             -ms-flex-item-align: center;
             align-self: center;
             text-align: right;
-            @media only screen and (max-width : 960px) {
+            @media only screen and (max-width : 900px) {
                 display: none;
             }
             a {
@@ -200,7 +200,7 @@ input.input[type=search],
 .mailchimp-nauta .mailchimp-nauta-flex {
     .flex(@display: flex);
     .flex-wrap(@wrap: wrap);
-    .justify-content(@justify: flex-end);
+    .justify-content(@justify: flex-start);
     .align-items(@align: flex-end);
     .align-content(@align: stretch);
     label {
@@ -214,9 +214,14 @@ input.input[type=search],
         }
     }
     input {
-        -webkit-flex: 1 1 30%;
-        -ms-flex: 1 1 30%;
-        flex: 1 1 30%;
+        -webkit-flex: 0 1 30%;
+        -ms-flex: 0 1 30%;
+        flex: 0 1 30%;
+        @media only screen and (max-width : 600px) {
+            -webkit-flex: 1 1 30%;
+            -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+        }
     }
     .clear  {
         -webkit-flex: 0 0 auto;
